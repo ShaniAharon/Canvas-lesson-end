@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+}
+
+canvas {
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto;
+}
+
+.modal {
+    height: 50px;
+    width: 100px;
+    background-color: #fff;
+    border: 1px solid burlywood;
+    border-radius: 20px;
+    padding: 5px;
+    position: absolute;
+}

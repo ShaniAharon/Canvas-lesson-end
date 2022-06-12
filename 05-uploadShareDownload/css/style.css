@@ -1,0 +1,82 @@
+html {
+  /* font-size: 40px; */
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: space-evenly;
+}
+
+.inputs {
+  font-size: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin:10px;
+  padding:5px;
+}
+
+.btn {
+  background: #4267b2;
+  border: 1px solid #4267b2;
+  font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0 5px;
+  user-select: none;
+  white-space: nowrap;
+  padding: 5px 10px;
+  border-radius: 3px;
+  text-decoration: none;
+  margin: 3px;
+}
+
+.file-input {
+  border: 1px solid red;
+  padding: 5px;
+  margin: 10px;
+  font-size: 20px;
+
+}
+
+
+
+.canvas-container {
+  width: 60vw;
+  height: 60vh;
+}
+
+  .share-container {
+    display: flex;
+  }
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+  html {
+    font-size: 30px;
+  }
+
+  .file-input {
+   font-size: 18px;
+  }
+  .canvas-container {
+    width: 85vw;
+    height: 50vh;
+  }
+}

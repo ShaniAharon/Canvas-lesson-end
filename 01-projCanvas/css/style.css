@@ -1,0 +1,14 @@
+
+canvas{
+    display: block;
+    margin: 0 auto;
+    /* outline: 1px solid black; */
+    background-color: white;
+}
+
+.canvas-container{
+    background-color: brown;
+    margin: 0 auto;
+    width: 90vw;
+    height: 90vh;
+}
