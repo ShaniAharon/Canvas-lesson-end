@@ -17,15 +17,13 @@ function onInit() {
 }
 
 function renderCanvas() {
-    //save the curr context/style
-    gCtx.save()
-    //change to blue 
+
+    //Set the backgournd color to grey 
     gCtx.fillStyle = "#ede5ff"
-    //clear the canvas
+    //Clear the canvas,  fill it with grey background
     gCtx.fillRect(0, 0, gElCanvas.width, gElCanvas.height)
     renderCircle()
-    //restore the context
-    gCtx.restore()
+
 }
 
 function renderCircle() {

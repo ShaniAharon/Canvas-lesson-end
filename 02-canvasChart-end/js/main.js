@@ -43,12 +43,6 @@ function drawCharts() {
         star.y = gCanvas.height - star.rate
         gCtx.fillRect(star.x, star.y, gBarWidth, star.rate)
     })
-    // gStars.forEach((star, idx) => {
-    //     star.x = idx * (gBarWidth + 40) + 20
-    //     const starHeight = star.rate //100
-    //     star.y = gCanvas.height - starHeight
-    //     gCtx.fillRect(star.x, star.y, gBarWidth, starHeight)
-    // })
 }
 
 function canvasClicked(ev) {
@@ -57,11 +51,12 @@ function canvasClicked(ev) {
     const clickedStar = gStars.find(star => {
         //check if we clicked on a bar
         return (
+            // offsetX/Y pos inside the element canvas
             ev.offsetX > star.x && ev.offsetX < star.x + gBarWidth &&
             ev.offsetY > star.y && ev.offsetY < star.y + star.rate
         )
     })
-
+    // clientX/Y pos in the window
     if (clickedStar) openModal(clickedStar.name, clickedStar.rate, ev.clientX, ev.clientY)
     else closeModal()
 }
