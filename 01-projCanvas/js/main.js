@@ -6,7 +6,6 @@ function init() {
   gCanvas = document.getElementById('my-canvas');
   gCtx = gCanvas.getContext('2d');
 
-  //can use numbers 1-13 for the examples
   drawLine(10, 10, 130, 230)
   // drawTriangle(50, 250)
   // drawRect(250, 30)
@@ -38,8 +37,6 @@ function drawTriangle(x, y) {
   /* 
   Causes the point of the pen to move back to the start of the current sub-path.
    It tries to draw a straight line from the current point to the start.
-    If the shape has already been closed or has only one point,
-     this function does nothing.
   */
   gCtx.closePath();
   gCtx.lineTo(x, y);
